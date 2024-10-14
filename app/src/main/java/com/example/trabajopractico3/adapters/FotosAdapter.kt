@@ -19,15 +19,15 @@ class FotosAdapter(private val fotos: List<Int>, private val nombre: String) : R
     override fun onBindViewHolder(holder: FotoViewHolder, position: Int) {
         val fotoResId = fotos[position]
         Glide.with(holder.itemView.context)
-            .load(fotoResId) // Usamos el ID del recurso drawable
+            .load(fotoResId)
             .into(holder.imageViewFoto)
     }
+
 
     override fun getItemCount(): Int = fotos.size
 
     inner class FotoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageViewFoto: ImageView = itemView.findViewById(R.id.imageViewFoto)
-
     }
 }
 

@@ -29,10 +29,9 @@ class FragmentListaPersona : Fragment() {
         recyclerViewLikes = view.findViewById(R.id.recyclerViewLikes)
 
         recyclerViewLikes.layoutManager = LinearLayoutManager(context)
-        val adapter = LikesAdapter() // Asegúrate de pasar la lista de likes al adaptador
+        val adapter = LikesAdapter()
         recyclerViewLikes.adapter = adapter
 
-        // Observamos los cambios en la lista de likes
         viewModel.likes.observe(viewLifecycleOwner) { likes ->
             adapter.submitList(likes)
         }

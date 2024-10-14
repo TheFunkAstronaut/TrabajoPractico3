@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <!-- LinearLayout para la barra de fotos -->
+
         <LinearLayout
             android:id="@+id/photoBar"
             android:layout_width="match_parent"
@@ -21,7 +21,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
-        <!-- ViewPager2 para las fotos -->
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPagerFotos"
             android:layout_width="0dp"
@@ -33,9 +32,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
-
-
-        <!-- TextView para el nombre -->
 
         <TextView
             android:id="@+id/textViewNombre"

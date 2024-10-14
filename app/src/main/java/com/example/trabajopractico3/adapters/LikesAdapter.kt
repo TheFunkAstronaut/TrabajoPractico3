@@ -30,7 +30,7 @@ class LikesAdapter : ListAdapter<Like, LikesAdapter.LikesViewHolder>(LikesDiffCa
 
         fun bind(like: Like) {
             textViewNombre.text = like.nombre
-            imageViewFoto.setImageResource(like.foto) // Carga la imagen
+            imageViewFoto.setImageResource(like.foto)
         }
     }
 

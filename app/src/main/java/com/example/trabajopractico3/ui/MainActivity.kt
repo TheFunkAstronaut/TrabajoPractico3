@@ -42,11 +42,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnLike.setOnClickListener {
-            viewModel.likePersona() // Llama al método likePersona del ViewModel
+            viewModel.likePersona()
         }
 
         btnDislike.setOnClickListener {
-            viewModel.dislikePersona() // Llama al método dislikePersona del ViewModel
+            viewModel.dislikePersona()
         }
     }
 }
